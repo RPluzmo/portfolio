@@ -16,7 +16,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #3a7563; /* Dark green background */
-
+            color: white;
             height: 100%;
             margin: 0;
         }
@@ -39,7 +39,23 @@
             margin: 0.5rem 0;
         }
 
-       
+        /* Navigation links */
+        nav {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid white;
+        }
 
         /* Section Styling */
         section {
@@ -97,6 +113,52 @@
             color: #dcdcdc;
         }
 
+
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2rem; /* Smaller title font size */
+            }
+
+            section h2 {
+                font-size: 2rem; /* Smaller subheading */
+            }
+
+            section p {
+                font-size: 1rem; /* Smaller paragraph text */
+            }
+
+            .projects {
+                grid-template-columns: 1fr; /* Stack project cards in a single column */
+            }
+
+            .contact h2 {
+                font-size: 2rem; /* Smaller heading in contact section */
+            }
+
+            .contact p {
+                font-size: 1rem; /* Smaller contact text */
+            }
+        }
+
+        /* For extra small devices like very small phones */
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem; /* Even smaller title font */
+            }
+
+            nav a {
+                font-size: 1.2rem; /* Adjusted font size for extra small screens */
+            }
+
+            section h2 {
+                font-size: 1.5rem; /* Adjusted section heading */
+            }
+
+            .project-card {
+                padding: 1rem; /* Less padding on small screens */
+            }          
+        }
+
     </style>
 </head>
 <body>
@@ -106,14 +168,13 @@
             <h1>Portfolio</h1>
         </header>
 
-        
+       
         <section id="about">
-            <h2>Par Mani</h2>
+            <h2>Par mani</h2>
             <p>
-                
+                ye
             </p>
         </section>
-
 
 
         <section id="projects">
@@ -125,11 +186,11 @@
                 </div>
                 <div class="project-card">
                     <h3>2</h3>
-                    <p>l</p>
+                    <p>ll</p>
                 </div>
                 <div class="project-card">
                     <h3>3</h3>
-                    <p>l</p>
+                    <p>lll</p>
                 </div>
             </div>
         </section>
@@ -139,7 +200,9 @@
         <section id="contact" class="contact">
             <h2>Kontakti</h2>
             <p>
-                
+               
+                <br><br>
+                E-Pasts: <a href="mailto:ipa23.r.pluzmo@vtdt.edu.lv">ipa23.r.pluzmo@vtdt.edu.lv</a>
             </p>
         </section>
 
